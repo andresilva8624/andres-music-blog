@@ -8,16 +8,28 @@ const userSchema = new Schema(
 			required: true,
 			unique: true,
 		},
-		// email: {
-		// 	type: String,
-		// 	required: true,
-		// 	unique: true,
-		// 	match: [/.+@.+\..+/, 'Must use a valid email address'],
-		// },
+		email: {
+			type: String,
+			required: true,
+			unique: true,
+			match: [/.+@.+\..+/, 'Must use a valid email address'],
+		},
 		password: {
 			type: String,
 			required: true,
-		}
+		},
+
+		isAdmin: {
+            type: Boolean,
+			required: false,
+		},
+		savedLesson: [
+			{
+				type: Schema.Types.ObjectId,
+				ref: 'Lesson'
+			}
+		]
+
 	},
 	// set this to use virtual below
 	{
