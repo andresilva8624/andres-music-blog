@@ -1,5 +1,5 @@
 const { AuthenticationError } = require('apollo-server-express');
-const { User } = require('../models');
+const { User, Lesson } = require('../models');
 const { signToken } = require('../utils/auth');
 
 const resolvers = {
@@ -24,7 +24,31 @@ const resolvers = {
 			const token = signToken(user);
 			
 			return { token, user };
-		}
+		},
+		addLesson: async (_, args, context) => {
+			if (context.user.isAdmin) {
+				const lesson = await Lesson.create(args);
+				return lesson;
+			}
+			
+			throw new AuthenticationError('Permission denied');
+		},
+		login: async (parent, { email, password }) => {
+			const user = await User.findOne({ email });
+	  
+			if (!user) {
+			  throw new AuthenticationError('Incorrect credentials');
+			}
+	  
+			const correctPw = await user.isCorrectPassword(password);
+	  
+			if (!correctPw) {
+			  throw new AuthenticationError('Incorrect credentials');
+			}
+	  
+			const token = signToken(user);
+			return { token, user };
+		  },
 	},
 };
 
