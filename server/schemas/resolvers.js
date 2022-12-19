@@ -1,5 +1,5 @@
 const { AuthenticationError } = require('apollo-server-express');
-const { User, Lesson } = require('../models');
+const { User, Lesson, Reaction, Thought } = require('../models');
 const { signToken } = require('../utils/auth');
 
 const resolvers = {
@@ -29,6 +29,22 @@ const resolvers = {
 			if (context.user.isAdmin) {
 				const lesson = await Lesson.create(args);
 				return lesson;
+			}
+			
+			throw new AuthenticationError('Permission denied');
+		},
+		addReaction: async (_, args, context) => {
+			if (context.user.isAdmin) {
+				const reaction = await Reaction.create(args);
+				return reaction;
+			}
+			
+			throw new AuthenticationError('Permission denied');
+		},
+		addThought: async (_, args, context) => {
+			if (context.user.isAdmin) {
+				const thought = await Thought.create(args);
+				return thought;
 			}
 			
 			throw new AuthenticationError('Permission denied');
