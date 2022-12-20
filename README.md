@@ -1,42 +1,10 @@
-# Andres-Music-Blog
-
-
-<li>WHEN I open the app</li>
-<li>THEN I see the options for music style licks</li>
-<li>WHEN I click on the music style</li>
-<li>THEN I'll see the lick videos with the transcription pdf attached unable to download</li>
-<li>WHEN I sign up and log in</li>
-<li>THEN I'll be able to comment on the video</li>
-<li>WHEN I add to favorite the video and download the transcription (maybe for a small fee eventually?)</li>
-<li>WHEN I add the video to favorites (star icon)</li>
-<li>THEN I'll able to post a respond video showing the lick being played</li>
-<li>WHEN I see the respond video</li>
-<li>THEN I'll be able to comment and rate the lick from 1 to 5 stars</li>
-
-
-<hr>
-
-
-Models
-
-
-<hr>
-
-
-<li>Log in</li>
-<li>User</li>
-<li>lesson title</li>
-<li>lesson text</li>
-<li>url tabs</li>
-<li>url video</li>
-
 
 # Andre's Music Blog
 
 
 ![Badge](https://img.shields.io/badge/AndreGitHub-MIT-green.svg)
 
-This is my Portfolio made with REACT. It showcases some of the projects that I've done since starting my coding journey. All the projects that I've done showcase my skills as a Web/Software/App Developer utilizing HTML, Advanced CSS, JavaScript, Node.js, Express-Handlebars, MySQL, JQuery, API's, REACT, NoSQL, Object-Oriented Programming (OOP), Progressive Web Applications (PWA), Object-Relational Mapping (ORM), Model-View-Controller (MVC), MERN. Additional projects are on my Repositories folder in [GitHub](https://www.github.com/andresilva8624). Enjoy! 😀
+On this Music-Blog, you can watch the YouTube videos, rate them, comment and make a response video playing the song. You can also add the videos to your Favorites, and also download the tab once you Sign Up and Login. The current uploaded videos are from Classic Rock songs to Brazillian Bossa Nova. Please send your requests, I'll be happy to play them. Stay tuned for more uploads. Enjoy and Rock on 😀 🎸 Enjoy! 😀
 
 
 
@@ -48,7 +16,7 @@ This is my Portfolio made with REACT. It showcases some of the projects that I'v
 
 ## Installation
 
-Clone the repository to your local machine and open the package.json on your Terminal with npm start.
+Clone the repository to your local machine and open the package.json on your Terminal with npm run develop.
 
 ## Usage
 
@@ -56,7 +24,7 @@ Clone the repository to your local machine and open the package.json on your Ter
 
 [Deployed Site Web](https://andresilva8624.github.io/andres-music-blog)
 
-![gif of deployed site](/src/assets/images/about.gif)
+![gif of deployed site](/client/src/images/blog.gif)
 
 
 
