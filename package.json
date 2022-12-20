@@ -1,10 +1,13 @@
 {
   "name": "p_3_starter_code",
+  "homepage": "https://andresilva8624.github.io/andres-music-blog",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node server/server.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
     "install": "cd server && npm i && cd ../client && npm i",
     "build": "cd client && npm run build"
@@ -16,6 +19,7 @@
     "concurrently": "^7.6.0"
   },
   "dependencies": {
+    "gh-pages": "^4.0.0",
     "react-bootstrap": "^2.7.0"
   }
 }

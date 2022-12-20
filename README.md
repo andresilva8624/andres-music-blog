@@ -4,7 +4,7 @@
 
 ![Badge](https://img.shields.io/badge/AndreGitHub-MIT-green.svg)
 
-On this Music-Blog, you can watch the YouTube videos, rate them, comment and make a response video playing the song. You can also add the videos to your Favorites, and also download the tab once you Sign Up and Login. The current uploaded videos are from Classic Rock songs to Brazillian Bossa Nova. Please send your requests, I'll be happy to play them. Stay tuned for more uploads. Enjoy and Rock on 😀 🎸 Enjoy! 😀
+On this Music-Blog, you can watch the YouTube videos, rate them, comment and make a response video playing the song. You can also add the videos to your Favorites, and also download the tab once you Sign Up and Login. The current uploaded videos are from Classic Rock songs to Brazillian Bossa Nova. Please send your requests, I'll be happy to play them. Stay tuned for more uploads. Enjoy and Rock on 😀 🎸 !
 
 
 
