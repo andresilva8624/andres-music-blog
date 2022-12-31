@@ -25,14 +25,15 @@ const resolvers = {
 			
 			return { token, user };
 		},
-		addLesson: async (_, args, context) => {
-			if (context.user.isAdmin) {
+		saveLesson: async (_, args) => {
 				const lesson = await Lesson.create(args);
-				return lesson;
-			}
+				const token = signToken(lesson);
+
+				return { token, lesson} ;
+			},
 			
-			throw new AuthenticationError('Permission denied');
-		},
+			// throw new AuthenticationError('Permission denied');
+		
 		addReaction: async (_, args, context) => {
 			if (context.user.isAdmin) {
 				const reaction = await Reaction.create(args);

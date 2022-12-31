@@ -41,7 +41,7 @@ const typeDefs = gql`
 	type Mutation {
 		login(email: String!, password: String!): Auth
 		addUser(username: String!, email: String!, password: String!): Auth
-		addLesson(title: String!,description: String!,tabsURL: String!,videoURL: String!): Lesson
+		saveLesson(title: String!,description: String!,tabsURL: String!,videoURL: String!): Lesson
 		removeLesson(title: String!,description: String!,tabsURL: String!,videoURL: String!): Lesson
 		addReaction(title: String!,description: String!,tabsURL: String!,videoURL: String!): Reaction
 		addThought(title: String!,description: String!,tabsURL: String!,videoURL: String!): Thought
