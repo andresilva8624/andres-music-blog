@@ -1,5 +1,5 @@
 {
-  "name": "p_3_starter_code",
+  "name": "andres-music-blog",
   "homepage": "https://andresilva8624.github.io/andres-music-blog",
   "version": "1.0.0",
   "description": "",
@@ -16,10 +16,12 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "concurrently": "^7.6.0"
+    "concurrently": "^7.6.0",
+    "gh-pages": "^4.0.0"
   },
   "dependencies": {
-    "gh-pages": "^4.0.0",
-    "react-bootstrap": "^2.7.0"
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.7.0",
+    "react-scripts": "^0.2.0"
   }
 }
