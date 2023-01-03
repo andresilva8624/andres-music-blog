@@ -24,6 +24,8 @@ Clone the repository to your local machine and open the package.json on your Ter
 
 [Deployed Site Web](https://andresilva8624.github.io/andres-music-blog)
 
+[Deployed Heroku App](https://andres-music-blog.herokuapp.com)
+
 ![gif of deployed site](/client/src/images/blog.gif)
 
 
